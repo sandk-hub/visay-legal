@@ -11,9 +11,14 @@
       : browser;
 
   document.documentElement.lang = language;
-  document.title = language === 'vi'
-    ? 'Visay — Chính sách quyền riêng tư'
-    : 'Visay — Privacy Policy';
+  const isTerms = window.location.pathname.endsWith('/terms.html');
+  document.title = isTerms
+    ? language === 'vi'
+      ? 'Visay — Điều khoản sử dụng'
+      : 'Visay — Terms of Use'
+    : language === 'vi'
+      ? 'Visay — Chính sách quyền riêng tư'
+      : 'Visay — Privacy Policy';
 
   document.querySelectorAll('[data-policy]').forEach((policy) => {
     policy.hidden = policy.dataset.policy !== language;

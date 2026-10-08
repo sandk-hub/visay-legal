@@ -58,6 +58,9 @@ a:focus-visible, [tabindex]:focus-visible { outline: 3px solid #f09f3e; outline-
 }
 .brand { display: inline-flex; align-items: center; gap: 0.7rem; color: var(--ink); font-size: 1.12rem; font-weight: 780; text-decoration: none; }
 .brand-mark { display: grid; width: 36px; height: 36px; place-items: center; border-radius: 11px; background: var(--accent); color: white; font-weight: 850; box-shadow: 0 7px 20px rgba(49, 95, 202, 0.28); }
+.header-actions { display: flex; align-items: center; gap: 0.7rem; }
+.legal-link { color: var(--muted); font-size: 0.9rem; font-weight: 680; text-decoration: none; }
+.legal-link:hover { color: var(--accent); text-decoration: underline; }
 .language-switcher { display: flex; gap: 0.25rem; padding: 0.25rem; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); }
 .language-switcher a { padding: 0.42rem 0.75rem; border-radius: 999px; color: var(--muted); font-size: 0.9rem; font-weight: 680; text-decoration: none; }
 .language-switcher a[aria-current="page"] { background: var(--accent); color: #fff; }
@@ -106,6 +109,7 @@ footer { padding: 1.5rem 1rem 3rem; border-top: 1px solid var(--line); color: va
 @media (max-width: 700px) {
   .site-header { min-height: 64px; }
   .brand span:last-child { display: none; }
+  .legal-link { display: none; }
   .language-switcher a { padding-inline: 0.62rem; }
   .policy { padding-top: 3.5rem; }
   .summary-grid { grid-template-columns: 1fr; }
