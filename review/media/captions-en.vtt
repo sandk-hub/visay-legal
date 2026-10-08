@@ -1,0 +1,22 @@
+WEBVTT
+
+00:00.000 --> 00:08.000
+The user opens Screen Translation in Visay.
+
+00:08.000 --> 00:13.000
+Android requests the user's consent to share the screen.
+
+00:13.000 --> 00:30.000
+The screen-sharing session remains active while another app is open.
+
+00:30.000 --> 00:50.000
+The user taps the floating Visay button to capture and recognize screen text.
+
+00:50.000 --> 01:12.000
+Visay displays Japanese translations over the captured content.
+
+01:12.000 --> 01:22.000
+The user closes the translation overlay and opens the floating button controls.
+
+01:22.000 --> 01:33.800
+The user stops screen translation. The screen-sharing indicator disappears.
